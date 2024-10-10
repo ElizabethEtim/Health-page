@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health page</title>
+
+<!-- to make many divs appear on a row
+    <style>
+        .row{
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+   }
+   </style>
+   
+   
+   to add background image
+    #services{
+            background-image: url("Assets/palm_trees.jpg");  
+            background-position: center;
+            background-size: cover;
+            padding: 40px;
+            background-repeat: no-repeat;
+            position: relative;
+            
+            
+        }
+-->
+
+ <link rel= "stylesheet" href= "style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Fettle Mind and Body</h1>
+            <nav>
+                <a href="services" class="links">Services</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="about" class="links">About us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <!--use &nbsp; for space between words to choose where u want the space
+                use word-spacing for automatic space between each word-->
+
+                <a href="contact" class="links">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    
+
+    <img src="Assets\palm_trees.jpg" style="width: 100%; height: 400px;" alt="palm trees" >
+
+    <!-- class selector is preceeded by . while id #-->
+
+     <br><hr>
+    
+
+    <br><br>
+
+    
+    <p style="padding: 5px;">Please fill the form below, so we can send you weekly emails on <br>
+        health tips. You can also find the health tips on our website in <br>
+        the "Weekly health tips section".
+    </p>
+
+<div class="row">
+    <section id="form">
+        <form action="forms.io" target="_blank" method="get" autocomplete="on">
+            <!--text-->
+            <fieldset>
+                <legend class="legend">Name</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <Label for="lname">Last name:</Label><br>
+                <input type="text" id="lname" name="lname"><br>
+            </fieldset><br>
+            <fieldset>
+                <legend class="legend">Contact</legend><br>
+                <label for="Phone">Phone number:</label><br>
+                <input type="tel" id="Phone" name="Phone"><br>
+                <label for="mail">Email:</label><br>
+                <input type="email" id="mail" name="mail"><br>
+            </fieldset><br>
+            <!--radio-->
+            <fieldset>
+                <legend class="legend">More Details</legend><br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male:</label><br>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female:</label><br><br>
+                <label for="age">Date of birth:</label><br>
+                <input type="date" id="age" name="age" min="1944" max="2006"><br><br>
+                <label for="weight">Weight:</label><br>
+                <input type="number" id="weight" name="weight"><br><br>
+                <label for="height">Height:</label><br>
+                <input type="number" id="height" name="height"><br>
+            </fieldset><br>
+            <fieldset>
+                <!--dropdown-->
+                <legend class="legend">How do you want to receive weekly health tips?</legend><br>
+                <label for="contact">Select an option:</label>
+                <select name="contact" id="contact" size="2" multiple>
+                    <option value="textmessage">Text Message</option>
+                    <option value="email" selected>Email</option>
+                    <option value="call">Phone call</option>
+                </select>
+            </fieldset><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+    </section> <br><br><br>
+    
+    <section><h2 id="health-tips">Weekly Health Tips</h2><br><br>
+    <section id="workout">
+        <h3 style="color: rgb(226, 43, 98); text-decoration-line: underline; text-decoration-color: rgb(29, 0, 0); text-align: center;">10 Health Benefits of Daily Workout</h3>
+        <p>-Reduces body fat <br>
+            -Increases lifespan <br>
+            -Strengthens muscles and bones <br>
+            -Improves memory <br>
+            -Detoxifies the body and boosts immune system <br>
+            -Lowers blood pressure <br>
+            -Reduces stress <br>
+            -Maintains mobility <br>
+            -Boosts mood <br>
+            -Strengthens the heart and clears the arteries
+        </p>
+    </section>
+    </section>
+</div>
+
+    <br><br><br>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Welcome to Fettle Mind and Body</h1>
+            <p>Your health is our priority. Providing top-notch healthcare services.</p>
+            <button class="btn">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 style="color: rgb(96, 8, 131)";>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>General Consultation</h3>
+                    <p>Comprehensive health check-ups and consultations.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Emergency Care</h3>
+                    <p>24/7 emergency services to handle any urgent health issues.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Health Tips</h3>
+                    <p>Access to a wide range of tips on how to avoid or handle diseases and mental health.</p>
+                </div>
+                <div class="service-item">
+                    <h3> Simple Workouts</h3>
+                    <p>Simple workouts tip for healthy organs and general healthy living.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Fettle Mind and Body readily serves the community, providing exceptional healthcare services to ensure the well-being of our everyone. Our team of dedicated professionals is committed to delivering personalized care with compassion and expertise.</p>
+                    <p>We believe in a holistic approach to health, focusing on prevention, treatment, and education to help our everyone lead healthier lives.</p>
+                </div>
+                <div class="about-image">
+                    <img src="Assets\healthcare.jpg" alt="About HealthyCare">
+                </div>
+            </div>
+        </div>
+    </section>
+
+     
+    <br><br>
+    
+    <section id="about">
+    <h2 style="color: rgb(221, 55, 14);">About Us</h2>
+    <p>
+        Fettle Mind and Body is an organization which consists of 
+        <br>people who are passionate about the well-being of everyone.
+        <br>Our objective is to make sure everyone lives a healthy life.
+        <br>Our contents, including articles, videos, graphics and more are 
+        <br>screened by experienced health personels.
+    </p>
+    </section>
+
+    <br><br>
+
+    <section id="contact">
+        <h2 style="color: rgb(19, 56, 179);">Contact Us</h2>
+        <p>
+            Phone: +234-901-242-0161
+            <br><a href="mailto:lizzyetim961@gmail.com">Email</a>
+        </p>
+    </section>
+
+    <br><br>
+    
+    <footer>
+        <p style="text-align: center; background-color: rgba(6, 10, 19, 0.842); color: antiquewhite; font-style: italic; font-size: 13px;">
+        &copy; 2024 Fettle Mind and Body. All Rights Reserved.
+    </p>
+    </footer>
+
+    <!--
+    to make divs appear on a row
+    <div class="row">
+        <div>abc</div>
+        <div>efg</div>
+        <div>hij</div>
+    </div>-->
+
+
+</body>
+</html>
