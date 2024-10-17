@@ -9,25 +9,59 @@ body{
 }
 
 .header-content{
-    background-color: rgba(229, 252, 229, 0.74); 
+    background-color: rgba(179, 250, 179, 0.664); 
     padding: 7px;
-    opacity: 5px;
+    opacity: 6px;
 }
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    color: rgb(4, 112, 4);
+    color: rgb(7, 107, 7);
     font-size: 40px;
 }
 
-nav{
-    float: left right; 
-    text-align: center; 
-    padding-bottom: 20px;
+ /* Header */
+ header {
+    background-color: rgba(200, 250, 200, 0.685);
+    color: #bb1313;
+    padding: 2px;
 }
 
-#services, #about, #contact{
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin-left: 1.5rem;
+}
+
+.navbar a {
+    color: #bb1313;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff0202;
+}
+
+
+#services, #about-us, #contact{
     text-align: center;
 }
 
@@ -178,4 +212,33 @@ nav{
 .about-image img {
     width: 100%;
     border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .navbar li {
+        margin: 1rem 0;
+    }
+
+    .navbar .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+    display: none;
+    color: #fff;
 }
